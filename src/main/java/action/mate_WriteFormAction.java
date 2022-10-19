@@ -24,9 +24,9 @@ public class mate_WriteFormAction implements CommandAction {
 	@Override
 	public String requestPro(HttpServletRequest request, HttpServletResponse response) throws Throwable {
 		// TODO Auto-generated method stub
-		   int num=0;
-		   
-	
+		
+		
+		int num=0;
 		   //Session의 아이디와 성별을 가져불러와 적용하기위한 부분
 //		   String loginUserID = "kkk";		//임시로 넣어둔 값(실제 DB에 있는 아이디) (나중에 밑에껄로 바꿔야함)
 //		   String loginUserID = session.getAttribute("id");   					 //Session을 Object로 담았을때

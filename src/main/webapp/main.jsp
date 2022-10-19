@@ -74,6 +74,9 @@
 		id=(String)session.getAttribute("id");
 	}
 %>
+
+
+
 </head>
 <body>
     <div class="wrap">

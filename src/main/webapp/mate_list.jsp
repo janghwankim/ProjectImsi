@@ -33,9 +33,8 @@ function commonChk(chk,cmd) {
 		document.getElementById(cmd).value="N";
 }
 
-function more(){
-	alert('더보기')
-}
+
+
 
 </script>
 
@@ -50,7 +49,7 @@ function more(){
             </header>
             <!-- 메뉴바 -->
             <nav class="nav">
-                 <ul class="menu">
+                 <ul class="menu">  
 	                <li class="menu1"><a href="share_list.do">쉐어하우스</a></li>
 	                <li class="menu2"><a href="mate_list.do">룸메이트</a></li>
 	                <li class="menu3"><a href="free_list.do">자유게시판</a></li>
@@ -126,7 +125,7 @@ function more(){
 	     	<table border="1" width="700" cellpadding="0" cellspacing="0" align="center">
 	     	<tr>
 				<td class="add_bt" align="right">
-               	 	<input class="btn btn-outline-secondary" type="submit" value="새 글 작성"  OnClick="window.location='/Project/mate_writeForm.do'" style="color: #17a2b8; border-color: #17a2b8;">
+               	 	<input class="btn btn-outline-secondary" type="submit" value="새 글 작성"  OnClick="window.location='/Project/mate_writeForm.do'">
             	</td>
 			</tr>
 			<tr>
@@ -212,8 +211,9 @@ function more(){
 	--%>
 	
 
-	<%-- 필터검색과 페이징이 동시에 안되서 임시로 잠궈놓음
-	 <center>
+
+	<%--  
+	<center>
 	<div class="paging">
 			<a href="/Project/mate_list.do?pageNum=${pgList.startPage}&search=${search}&searchtext=${searchtext}" class="prev"><img src="./image/left-next.png"></a>
 	
@@ -233,7 +233,7 @@ function more(){
 	</c:if>
 	<a href="/Project/mate_list.do?pageNum=${pgList.endPage}&search=${search}&searchtext=${searchtext}"class="prev"><img src="./image/right-next.png"></a>
 	</div>
-</center>  --%>
+</center>   --%>
 <p>
 
        <!-- 꼬리말 -->

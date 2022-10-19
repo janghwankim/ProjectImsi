@@ -49,15 +49,23 @@
 			reader.readAsDataURL(f);
 		});
 	}
-	
-    	
+		
  </script>
  
+ 
 
- 
- 
 <body>  
-
+<%  // 성향값이 없으면 새글작성 못하게 막기 
+    String str=(String)request.getAttribute("smoking");
+	if(str.length()==0){ 
+%>
+		<script>
+			alert("성향테스트를 완료해야 작성가능합니다.");
+			history.back();
+		</script>
+<%
+	}
+%>
 <div class="wrap">
             <!-- 로고 -->
             <header class="hd">
@@ -109,7 +117,6 @@
                                 <tr>
                                     <td bgcolor="#F5F5F5"><b>작성자</b></td>
                                     <td>
-                                        <%-- <input type="text" class="pf_input" name="writer" value=<%=(String)session.getAttribute("id")%>  readonly > --%>
                                         <input type="text" class="pf_input" name="writer" value="<c:out value="${id}"/>"  readonly >
                                     </td>
                                     <td bgcolor="#F5F5F5"><b>성별</b></td>
@@ -130,8 +137,6 @@
                                     <p>
                                     	흡연: ${smoking} 수면시간: ${sleeptime}  반려동물: ${pet} 잠버릇: ${sleepinghabbit} <br>
                                     	샤워시간: ${showertime} 출근시간: ${starttime} 퇴근시간: ${endtime}
-                                        <input type="hidden" class="pf_input" style="width: 100%; height:120px"
-                                        value="<c:out value="흡연: ${smoking} 수면시간: ${sleeptime}  반려동물: ${pet} 잠버릇: ${sleepinghabbit} 샤워시간: ${showertime} 출근시간: ${starttime} 퇴근시간: ${endtime}"  />"  >
 									</p>
                                     </td>
                                 </tr>
