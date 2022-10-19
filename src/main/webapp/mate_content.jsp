@@ -45,7 +45,6 @@
             <%
             	MateDTO article=new MateDTO();
             	String filename=article.getFilename();
-            	
             %>
             
                 <div class="pf_session">
@@ -91,7 +90,6 @@
                             </tr>
                           <tr>
  			<%
-					
   						 String id=null;
 					   	 session = request.getSession();
 						 id = (String) session.getAttribute("id"); 

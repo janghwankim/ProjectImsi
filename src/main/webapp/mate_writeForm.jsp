@@ -83,10 +83,9 @@
 	<form method="post" name="writeform" 
 		   action="/Project/mate_writePro.do" enctype="multipart/form-data"
 		   onsubmit="return writeSave()">
-		   
 	<!-- 입력하지 않고 매개변수로 전달해서 테이블에 저장(hidden) -->		   
 	<input type="hidden" name="mate_no" value="${num}"> 
-	<input type="hidden" name="id_no" value="1"> <!-- ${id_no} -->
+	<input type="hidden" name="id_no" value="${id_no}"> <!-- ${id_no} -->
 	<input type="hidden" name="views" value="0">
 	
 

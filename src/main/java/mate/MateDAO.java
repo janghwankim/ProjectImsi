@@ -279,7 +279,8 @@ public class MateDAO {
 			
 			int number=0;//데이터를 저장하기위한 게시물번호(=New)
 			System.out.println("insertArticle 메서드의 내부 num=>"+num);
-			
+			//추가
+			System.out.println("insertArticel내부의 article.getId_no()=>"+article.getId_no());
 			try {
 				con=pool.getConnection();
 				sql="select max(mate_no) from friend";
