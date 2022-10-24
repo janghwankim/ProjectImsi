@@ -17,7 +17,6 @@ public class mate_ContentAction implements CommandAction {
 	public String requestPro(HttpServletRequest request, HttpServletResponse response) throws Throwable {
 		// TODO Auto-generated method stub
 		//1.content.jsp에서 처리한 자바코드를 대신실행
-		//글상세보기=>(쇼핑물 상품의 정보 SangDetail.jsp?sangid=3&pageNum=1) 쇼핑물이라면
 		int num=Integer.parseInt(request.getParameter("num"));
 		String pageNum=request.getParameter("pageNum");
 		System.out.println("contentAction의 pageNum="+pageNum+",num=>"+num);

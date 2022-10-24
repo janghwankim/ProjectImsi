@@ -15,16 +15,6 @@ public class TendencyDTO {
 	
 	//필터를 위해 추가 
 	private String searchText = "";
-	private String sleep ="" ;	
-	
-	
-	
-	public String getSleep() {
-		return sleep;
-	}
-	public void setSleep(String sleep) {
-		this.sleep = sleep;
-	}
 	
 
 	public String getStarttime() {

@@ -109,7 +109,7 @@
                         <c:if test="${loginId != id}"> 
                             	<td colspan="4" align="right">
                                 <span class="pf_button">
-                                    <input class="btn btn-outline-secondary" type="submit" value="신청하기">
+                                    <input type="button" class="btn btn-outline-secondary" value="연락하기" >
                                 </span> 		
                                 <input type="button" class="btn btn-outline-secondary" value="글목록" onclick="document.location.href='/Project/mate_list.do?pageNum=${pageNum}'">
                                 </td>

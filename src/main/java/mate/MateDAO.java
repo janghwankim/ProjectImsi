@@ -160,7 +160,6 @@ public class MateDAO {
 				}
 				*/
 				//sql += "and (rownum > ? and rownum <= ?)";
-																								//sql += "and (rownum >= "+start+" and rownum <= "+end +")";
 				sql += " order by  a.mate_no desc";
 				
 

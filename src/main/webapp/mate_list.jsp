@@ -34,10 +34,7 @@ function commonChk(chk,cmd) {
 }
 
 
-
-
 </script>
-
 
  <body>
         <div class="wrap">
@@ -180,7 +177,7 @@ function commonChk(chk,cmd) {
                                 	<span class="mini_s">반려동물</span>
                                 </c:if>
                                 <c:if test="${article.tendency.pet =='N'}">
-                                	<span class="mini_s">반려돌물x</span>
+                                	<span class="mini_s">반려동물x</span>
                                 </c:if>
                                
                                 <c:if test="${article.tendency.sleepinghabbit =='Y'}">

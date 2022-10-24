@@ -59,7 +59,7 @@ public class mate_ListAction implements CommandAction {
 			tenDTO.setShowertime(showerTime);
 			tenDTO.setSmoking(smokeYN);
 			tenDTO.setPet(petYN);
-			tenDTO.setSleep(sleepYN);
+			tenDTO.setSleepinghabbit(sleepYN);
 			tenDTO.setSearchText(searchText);
 			
 			

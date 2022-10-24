@@ -93,7 +93,7 @@
 		   onsubmit="return writeSave()">
 	<!-- 입력하지 않고 매개변수로 전달해서 테이블에 저장(hidden) -->		   
 	<input type="hidden" name="mate_no" value="${num}"> 
-	<input type="hidden" name="id_no" value="${id_no}"> <!-- ${id_no} -->
+	<input type="hidden" name="id_no" value="${id_no}"> 
 	<input type="hidden" name="views" value="0">
 	
 
@@ -102,9 +102,10 @@
                     <div class="pf_top">
                     
                         <div class="pf_img"> 
-                        	
-                             <img src="test/img/profil.png" class="write_img" id="write_img" width="230px" height="230px" /> 
-                             
+                        	<div class="img_wrap">
+                             	<img src="test/img/profil.png" class="write_img" id="img" width="230px" height="230px" 
+		                           	 style="border-radius: 50%; display:inline-black;" /> 
+                             </div>
                              <div style="text-align: center;">
                               	<input type="file" class="form-control" id="file" name="file"  required />
                               </div>
